@@ -1,9 +1,9 @@
 import { ReactDOM, React } from "react";
 
 import "./Header.scss";
-import logoImg from "./../image/header/logo.png";
-import blackThemeImg from "./../image/header/blackThemeImg.png";
-import whiteThemeImg from "./../image/header/whiteThemeImg.png";
+import logoImg from "./../../assets/image/header/logo.png";
+import blackThemeImg from "./../../assets/image/header/blackThemeImg.png";
+import whiteThemeImg from "./../../assets/image/header/whiteThemeImg.png";
 
 function Header() {
   return (
