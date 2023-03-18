@@ -1,5 +1,6 @@
-import { ReactDOM, React } from "react";
-
+import React from "react";
+import DropwnMenu from "./DropDownMenu/DropDownMenu";
+import NavMenu from "./NavMenu/NavMenu";
 import "./Header.scss";
 import logoImg from "./../../assets/image/header/logo.png";
 import blackThemeImg from "./../../assets/image/header/blackThemeImg.png";
@@ -17,13 +18,7 @@ function Header() {
         </div>
         <div className="header__nav">
           <div className="header__menu">
-            <div className="header__menu-nav">
-              <div className="text-menu">Main</div>
-              <div className="text-menu">Map</div>
-              <div className="text-menu">Contact</div>
-              <div className="text-menu">About</div>
-              <div className="text-menu">Partners</div>
-            </div>
+            <NavMenu></NavMenu>
             <div className="header__menu-search">
               <input
                 className="menu-search"
@@ -32,14 +27,7 @@ function Header() {
               />
             </div>
           </div>
-          <div className="header__language">
-            <div className="header__language-text">Language</div>
-            <div className="header__language-btn">
-              <button className="language__btn-dropdown">english</button>
-              <div className="dropdown-content text-menu">russian</div>
-              <div className="dropdown-content text-menu">english</div>
-            </div>
-          </div>
+          <DropwnMenu></DropwnMenu>
           <div className="header__theme-btn">
             <img src={blackThemeImg} alt="theme" />
           </div>
