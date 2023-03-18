@@ -8,18 +8,6 @@
   align-items: center;
   justify-content: space-between;
 
-
-  &__logo {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    gap: 7px;
-
-    &-name {
-      color: $text-black-theme;
-    }
-  }
-
   &__nav {
     display: flex;
     flex-direction: row;
@@ -63,7 +51,6 @@
 
 .text-menu {
 color: $text-black-theme;
-font-family: $text-font-famyly;
 font-size: $text-size-medium;
 }
 

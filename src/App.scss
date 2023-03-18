@@ -1,0 +1,8 @@
+@import "./helpers/styles/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: $main-font-famyly;
+}
