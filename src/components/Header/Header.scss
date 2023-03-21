@@ -20,48 +20,27 @@
     flex-direction: column;
     gap: 25px;
 
-    &-nav{
+    &-nav {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 450px;
     }
 
-    &-search input{
+    &-search input {
       width: 430px;
       padding: 0 10px;
     }
   }
 
-  &__language{
-
-    &-text {
-      color: $language-header-text;
-    }
-
-    &-btn {
-
-    }
-  }
-
-  &__theme-btn{
-
+  &__theme-btn {
   }
 }
 
 .text-menu {
-color: $text-black-theme;
-font-size: $text-size-medium;
+  color: $text-black-theme;
+  font-size: $text-size-medium;
 }
 
 .menu-search {
-
-}
-
-.language__btn-dropdown {
-
-}
-
-.dropdown-content {
-
 }
