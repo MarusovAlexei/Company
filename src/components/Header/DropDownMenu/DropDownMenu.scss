@@ -3,11 +3,13 @@
 .header__language {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 
   &-text {
     color: $language-header-text;
     text-align: center;
+    font-size: $text-size-medium;
+    font-weight: 700;
   }
 
   &-btn {
@@ -21,12 +23,14 @@
   background-color: $bgc-black-theme;
   color: $text-black-theme;
   border: 2px solid white;
-  border-radius: 10px;
-  padding: 1px 30px;
+  border-radius: 15px;
+  font-size: $text-size-small;
+  width: 120px;
+  padding: 4px 0;
 }
 
 .language__btn-dropdown:hover {
-  transition: 0.5s;
+  transition: $time-transition;
   background-color: $language-header-text;
 }
 
@@ -34,12 +38,19 @@
   font-weight: 400;
   color: $text-black-theme;
   font-size: $text-size-small;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-content:hover {
+  transition: $time-transition;
+  background-color: rgba(0, 0, 0, 0.502);
 }
 
 .dropdown-content__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .inVisible {
@@ -52,7 +63,6 @@
   top: 52px;
   background-color: $language-header-text;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
 }

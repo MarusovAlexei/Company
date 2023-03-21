@@ -32,9 +32,7 @@ const DropwnMenu = () => {
           </button>
           <div
             className={
-              inVisible
-                ? "isVisible dropdown-content__wrapper"
-                : "inVisible dropdown-content__wrapper"
+              inVisible ? "isVisible dropdown-content__wrapper" : "inVisible"
             }
           >
             <DropdownContent content="russian" />
