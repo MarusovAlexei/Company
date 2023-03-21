@@ -1,12 +1,23 @@
 import "./DropDownMenu.scss";
 import React, { useState } from "react";
 
-const DropdownContent = (props) => {
-  return <div className="dropdown-content">{props.content}</div>;
-};
-
 const DropwnMenu = () => {
-  const [dropdown, setDropdown] = useState(false);
+  const [inVisible, isVisible] = useState(false);
+  const [language, setLanguage] = useState("english");
+
+  const DropdownContent = (props) => {
+    return (
+      <div
+        className="dropdown-content"
+        onClick={() => {
+          setLanguage(props.content);
+          isVisible(!inVisible);
+        }}
+      >
+        {props.content}
+      </div>
+    );
+  };
 
   return (
     <>
@@ -15,13 +26,13 @@ const DropwnMenu = () => {
         <div className="header__language-btn">
           <button
             className="language__btn-dropdown"
-            onClick={() => setDropdown(!dropdown)}
+            onClick={() => isVisible(!inVisible)}
           >
-            english
+            {language}
           </button>
           <div
             className={
-              dropdown
+              inVisible
                 ? "isVisible dropdown-content__wrapper"
                 : "inVisible dropdown-content__wrapper"
             }
