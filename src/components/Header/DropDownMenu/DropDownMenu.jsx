@@ -1,9 +1,15 @@
 import "./DropDownMenu.scss";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const DropwnMenu = () => {
   const [inVisible, isVisible] = useState(false);
-  const [language, setLanguage] = useState("english");
+  const [language, setLanguage] = useState("en");
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   const DropdownContent = (props) => {
     return (
@@ -12,6 +18,7 @@ const DropwnMenu = () => {
         onClick={() => {
           setLanguage(props.content);
           isVisible(!inVisible);
+          changeLanguage(props.content);
         }}
       >
         {props.content}
@@ -22,7 +29,7 @@ const DropwnMenu = () => {
   return (
     <>
       <div className="header__language">
-        <div className="header__language-text">Language</div>
+        <div className="header__language-text">{t("Language")}</div>
         <div className="header__language-btn">
           <button
             className="language__btn-dropdown"
@@ -35,8 +42,8 @@ const DropwnMenu = () => {
               inVisible ? "isVisible dropdown-content__wrapper" : "inVisible"
             }
           >
-            <DropdownContent content="russian" />
-            <DropdownContent content="english" />
+            <DropdownContent content="ru" />
+            <DropdownContent content="en" />
           </div>
         </div>
       </div>
