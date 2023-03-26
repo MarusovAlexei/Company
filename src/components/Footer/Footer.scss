@@ -1,0 +1,48 @@
+@import "./../../helpers/styles/variables";
+
+.footer {
+  background-color: $bgc-black-theme;
+  color: $text-black-theme;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+ 
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-addresses {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__name-company {
+    text-align: center;
+  }
+}
+
+.social {
+  &__media {
+    display: flex;
+    flex-direction: row;
+    &-item {
+    }
+  }
+  &__button {
+  }
+}
