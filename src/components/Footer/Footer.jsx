@@ -1,6 +1,12 @@
 import React from "react";
 import "./Footer.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTelegram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -9,7 +15,7 @@ function Footer() {
         <div className="footer__blocks">
           <div className="footer__blocks-addresses">
             <h3>Office addresses:</h3>
-            <ul>
+            <ul className="footer__list">
               <li>Minsk</li>
               <li>Mogilev</li>
               <li>Moscow</li>
@@ -19,7 +25,7 @@ function Footer() {
           </div>
           <div className="footer__blocks-contacts">
             <h3>Contact numbers:</h3>
-            <ul>
+            <ul className="footer__list">
               <li>+376(22)2222222</li>
               <li>+376(22)2222222</li>
               <li>+376(22)2222222</li>
@@ -27,22 +33,21 @@ function Footer() {
           </div>
           <div className="footer__blocks-social">
             <div className="social__media">
-          
               <a className="social__media-item" href="#">
-        
+                <FontAwesomeIcon icon={faTelegram} />
               </a>
               <a className="social__media-item" href="#">
-                2
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a className="social__media-item" href="#">
-                3
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
               <a className="social__media-item" href="#">
-                4
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
             <div className="social__button">
-              <button>call us</button>
+              <button>Call us</button>
             </div>
           </div>
         </div>
