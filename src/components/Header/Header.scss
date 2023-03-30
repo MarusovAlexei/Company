@@ -26,21 +26,10 @@
       justify-content: space-between;
       width: 450px;
     }
-
-    &-search input {
-      width: 430px;
-      padding: 0 10px;
-    }
-  }
-
-  &__theme-btn {
   }
 }
 
 .text-menu {
   color: $text-black-theme;
   font-size: $text-size-medium;
-}
-
-.menu-search {
 }
