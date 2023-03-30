@@ -1,28 +1,21 @@
 import { useTranslation } from "react-i18next";
 import "./NavMenu.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
-const MenuBtn = (props) => {
-  return (
-    <Link to={props.path}>
-      <div className="text-menu">{props.content}</div>
-    </Link>
-  );
-};
+import AddLink from "../../../helpers/Links";
 
 const NavMenu = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <Router>
-      <div className="header__menu-nav">
-        <MenuBtn content={t("navMenu.main")} path="/" />
-        <MenuBtn content={t("navMenu.map")} path="/map" />
-        <MenuBtn content={t("navMenu.contact")} path="/contact" />
-        <MenuBtn content={t("navMenu.about")} path="/about" />
-        <MenuBtn content={t("navMenu.partners")} path="/partners" />
-      </div>
-    </Router>
+    <>
+      <nav className="header__menu-nav">
+        <AddLink content={t("navMenu.main")} path="/" />
+        <AddLink content={t("navMenu.map")} path="/map" />
+        <AddLink content={t("navMenu.contact")} path="/contact" />
+        <AddLink content={t("navMenu.about")} path="/about" />
+        <AddLink content={t("navMenu.partners")} path="/partners" />
+      </nav>
+    </>
   );
 };
 

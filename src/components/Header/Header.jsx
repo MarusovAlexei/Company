@@ -10,7 +10,7 @@ import whiteThemeImg from "./../../assets/image/header/whiteThemeImg.png";
 function Header() {
   return (
     <>
-      <div className="header">
+      <header className="header">
         <Logo />
         <div className="header__nav">
           <div className="header__menu">
@@ -28,7 +28,7 @@ function Header() {
             <img src={blackThemeImg} alt="theme" />
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 }
