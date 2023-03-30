@@ -16,7 +16,7 @@ const NavMenu = () => {
   return (
     <Router>
       <div className="header__menu-nav">
-        <MenuBtn content={t("navMenu.main")} path="/main" />
+        <MenuBtn content={t("navMenu.main")} path="/" />
         <MenuBtn content={t("navMenu.map")} path="/map" />
         <MenuBtn content={t("navMenu.contact")} path="/contact" />
         <MenuBtn content={t("navMenu.about")} path="/about" />

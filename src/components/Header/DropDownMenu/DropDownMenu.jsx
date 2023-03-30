@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const DropwnMenu = () => {
   const [inVisible, isVisible] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("ru");
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (language) => {

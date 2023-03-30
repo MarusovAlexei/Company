@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 const Logo = () => {
   return (
     <Router>
-      <Link to="/main">
+      <Link to="/">
         <div className="header__logo">
           <div className="header__logo-img">
             <img src={logoImg} alt="logo" />
