@@ -29,7 +29,7 @@ const DropwnMenu = () => {
   return (
     <>
       <div className="header__language">
-        <div className="header__language-text">{t("Language")}</div>
+        <div className="header__language-text">{t("language")}</div>
         <div className="header__language-btn">
           <button
             className="language__btn-dropdown"
