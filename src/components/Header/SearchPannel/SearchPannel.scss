@@ -1,0 +1,16 @@
+@import "./../../../helpers/styles/_variables.scss";
+
+.header__menu-search input {
+  width: 100%;
+  height: 25px;
+  padding: 0 40px;
+  background: url(./../../../assets/image/header/magnifying-glass.png) no-repeat
+    10px center;
+  background-color: $bgc-search-pannel;
+
+  &::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: $text-size-small;
+  }
+}

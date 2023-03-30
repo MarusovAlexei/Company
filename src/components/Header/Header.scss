@@ -1,0 +1,35 @@
+@import "./../../helpers/styles/_variables.scss";
+
+.header {
+  background-color: $bgc-black-theme;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 450px;
+    }
+  }
+}
+
+.text-menu {
+  color: $text-black-theme;
+  font-size: $text-size-medium;
+}

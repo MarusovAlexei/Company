@@ -1,0 +1,10 @@
+{
+  "language": "Language",
+  "navMenu": {
+    "main": "Main", 
+    "map": "Map",
+    "contact": "Contact",
+    "about": "About",
+    "partners": "Partners"    
+  }
+}
