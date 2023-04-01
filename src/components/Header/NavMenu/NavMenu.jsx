@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./NavMenu.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import AddLink from "../../../helpers/Links";
+import AddLink from "../../../helpers/jsx/Links";
 
 const NavMenu = () => {
   const { t, i18n } = useTranslation();
