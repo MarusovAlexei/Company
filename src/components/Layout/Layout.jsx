@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div
       className={cn("layout", {
-        white: isDark === true,
+        white: isDark === false,
       })}
     >
       {children}

@@ -8,7 +8,7 @@ const ToggleTheme = () => {
 
   return (
     <div className="header__theme-btn" onClick={() => setIsDark(!isDark)}>
-      <img src={isDark ? whiteThemeImg : blackThemeImg} alt="theme" />
+      <img src={isDark ? blackThemeImg : whiteThemeImg} alt="theme" />
     </div>
   );
 };
