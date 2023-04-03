@@ -1,13 +1,21 @@
 @import "./../../../helpers/styles/_variables.scss";
 
-.header__logo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: $gap-small;
-  flex-wrap: wrap;
+.layout {
+  .header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: $gap-small;
+    flex-wrap: wrap;
 
-  &-name {
-    color: $text-black-theme;
+    &-name {
+      color: $text-black-theme;
+    }
+  }
+}
+
+.layout.white {
+  .header__logo-name {
+    color: $text-white-theme;
   }
 }

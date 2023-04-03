@@ -1,4 +1,3 @@
-import "./Layout.scss";
 import useTheme from "../../hooks/useTheme";
 import cn from "classnames";
 

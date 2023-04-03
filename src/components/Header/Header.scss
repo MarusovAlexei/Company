@@ -1,35 +1,48 @@
 @import "./../../helpers/styles/_variables.scss";
 
-.header {
- 
-  padding: 30px 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  &__nav {
+.layout {
+  .header {
+    padding: 30px 60px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bgc-black-theme;
 
-    gap: 40px;
-  }
-
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-
-    &-nav {
+    &__nav {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      width: 450px;
+
+      gap: 40px;
     }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      &-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 450px;
+      }
+    }
+  }
+
+  .text-menu {
+    color: $text-black-theme;
+    font-size: $text-size-medium;
   }
 }
 
-.text-menu {
-  color: $text-black-theme;
-  font-size: $text-size-medium;
+.layout.white {
+  .header {
+    background-color: $bgc-white-theme;
+  }
+
+  .text-menu {
+    color: $text-white-theme;
+    font-size: $text-size-medium;
+  }
 }
