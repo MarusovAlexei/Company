@@ -12,6 +12,7 @@
     "btn":"Request a call"
   },
   "map": {
+    "header":"CHOOSE THE COUNTRY",
     "Belarus" : "Belarus",
     "Russia" : "Russia",
     "Georgia" : "Georgia",
