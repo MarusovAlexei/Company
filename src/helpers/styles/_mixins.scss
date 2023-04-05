@@ -1,0 +1,43 @@
+@mixin image-alignment-center {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin flex-alignment-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-alignment-down {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@mixin flex-alignment-up {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bgc-section-header;
+  color: $text-black-theme;
+  letter-spacing: 0.1em;
+  max-width: 1280px;
+  width: 100vw;
+  height: 60px;
+}
+
+@mixin contry-header {
+  font-weight: 600;
+  font-size: $text-size-large;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+}

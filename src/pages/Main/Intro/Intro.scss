@@ -1,0 +1,58 @@
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
+
+.layout {
+  .intro {
+    height: 60vh;
+    max-height: 582px;
+    color: aliceblue;
+    background-color: $bgc-black-theme;
+    @include flex-alignment-center;
+
+    &__container {
+      max-width: 1280px;
+      width: 100%;
+      padding: $gap-medium;
+      height: 100%;
+      background-image: url(./../../../assets/image/intro/backgroundIntro-blackTheme.png);
+      @include image-alignment-center;
+      @include flex-alignment-down;
+    }
+
+    &-content {
+      width: 520px;
+      height: 110px;
+      background-color: $bgc-intro;
+      flex-direction: column;
+      gap: $gap-small;
+      border-radius: 40px;
+      @include flex-alignment-center;
+    }
+
+    &-btn {
+      height: 44px;
+      width: 320px;
+      left: 480px;
+      top: 556px;
+      border-radius: 40px;
+      background-color: $bgc-black-theme;
+      color: $text-black-theme;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.layout.white {
+  .intro {
+    background-color: $bgc-white-theme;
+
+    &__container {
+      background-image: url(./../../../assets/image/intro/backgroundIntro-whiteTheme.png);
+    }
+  }
+}
