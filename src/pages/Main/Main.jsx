@@ -1,8 +1,13 @@
+import "./Main.scss";
+import Intro from "./Intro/Intro";
+import Map from "./Map/Map";
+
 const Main = () => {
   return (
-    <div className="page err-page">
-      <h2>Main</h2>
-    </div>
+    <section>
+      <Intro />
+      <Map />
+    </section>
   );
 };
 
