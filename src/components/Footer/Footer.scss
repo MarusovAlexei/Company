@@ -1,0 +1,102 @@
+@import "./../../helpers/styles/variables";
+@import "./../../helpers/styles/mixins";
+
+.layout {
+  .footer {
+    @include flex-alignment-center;
+    background-color: $bgc-black-theme;
+    color: $text-black-theme;
+
+    &__container {
+      @include section-width;
+      display: flex;
+      flex-direction: column;
+      padding: $padding-small $padding-large;
+      gap: $gap-large;
+    }
+
+    &__blocks {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-addresses,
+      &-contacts,
+      &-social {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__list {
+      padding-top: $padding-small;
+    }
+
+    &__name-company {
+      text-align: center;
+    }
+  }
+
+  .social {
+    &__media {
+      display: flex;
+      flex-direction: row;
+      gap: $gap-medium;
+      font-size: 2em;
+      padding-bottom: $padding-standart;
+
+      &-item {
+        color: $text-black-theme;
+      }
+    }
+
+    &__button a {
+      display: inline-block;
+      width: 100%;
+      padding: 0.5em 2em;
+      border: 2px solid;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: $text-black-theme;
+      transition: $time-transition;
+      background-color: $bgc-black-theme;
+    }
+
+    &__button a:hover {
+      background: $btn-black-hover;
+    }
+
+    &__button a:active {
+      background: $btn-black-active;
+    }
+  }
+}
+
+.layout.white {
+  .footer {
+    background-color: $bgc-white-theme;
+    color: $text-white-theme;
+  }
+
+  .social {
+    &__media-item {
+      color: $text-white-theme;
+    }
+
+    &__button a {
+      color: $text-white-theme;
+      background-color: $bgc-white-theme;
+    }
+
+    &__button a:hover {
+      background: $btn-white-hover;
+      color: $text-black-theme;
+    }
+
+    &__button a:active {
+      background: $btn-white-active;
+    }
+  }
+}
