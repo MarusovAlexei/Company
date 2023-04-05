@@ -6,5 +6,18 @@
     "contact": "Contact",
     "about": "About",
     "partners": "Partners"    
+  },
+  "intro": {
+    "header":"CHOOSE A PROPERTY FOR YOURSELF",
+    "btn":"Request a call"
+  },
+  "map": {
+    "Belarus" : "Belarus",
+    "Russia" : "Russia",
+    "Georgia" : "Georgia",
+    "Azerbaijan" : "Azerbaijan",
+    "UAE" : "UAE",
+    "Turkey" : "Turkey",
+    "Cyprus" : "Cyprus"
   }
 }
