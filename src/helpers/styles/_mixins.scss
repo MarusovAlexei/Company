@@ -1,9 +1,4 @@
-@mixin image-alignment-center {
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+/* flex */
 
 @mixin flex-alignment-center {
   display: flex;
@@ -23,6 +18,8 @@
   justify-content: flex-start;
 }
 
+/* sections */
+
 @mixin section-header {
   display: flex;
   align-items: center;
@@ -34,6 +31,22 @@
   width: 100vw;
   height: 60px;
 }
+
+@mixin section-width {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* images */
+
+@mixin image-alignment-center {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* other */
 
 @mixin contry-header {
   font-weight: 600;

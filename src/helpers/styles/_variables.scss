@@ -1,25 +1,47 @@
-// Colors
-$text-black-theme: rgb(255, 255, 255);
-$text-white-theme: rgb(0, 0, 0);
-$bgc-black-theme: rgb(0, 0, 0);
-$bgc-white-theme: rgb(253, 253, 253);
-$language-header-text: rgb(177, 129, 56);
-$bgc-intro: rgba(177, 129, 56, 0.8);
-$bgc-section-header: rgb(177, 129, 56);
-$bgc-error-page: rgb(255, 255, 255);
-$bgc-search-pannel: rgb(233, 233, 233);
+/* Colors */
 
-// Fonts
+// black theme
+$bgc-black-theme: rgb(0, 0, 0);
+$text-black-theme: rgb(255, 255, 255);
+$btn-black-hover: rgba(255, 255, 255, 0.2);
+$btn-black-active: rgb(255, 255, 255);
+
+// white theme
+$bgc-white-theme: rgb(253, 253, 253);
+$text-white-theme: rgb(0, 0, 0);
+$btn-white-hover: rgb(177, 129, 56);
+$btn-white-active: rgb(255, 255, 255);
+
+// sections and elements
+$bgc-section-header: rgb(177, 129, 56);
+$bgc-search-pannel: rgb(233, 233, 233);
+$bgc-intro: rgba(177, 129, 56, 0.8);
+$bgc-error-page: rgb(255, 255, 255);
+$language-header-text: rgb(177, 129, 56);
+
+/* Fonts */
+
+// font famyly
 $main-font-famyly: "Inter", sans-serif;
 
+// font size
 $text-size-small: 16px;
 $text-size-medium: 20px;
 $text-size-large: 32px;
 
-// Effects
+/* Effects */
+
 $time-transition: 0.5s;
 
-// Indents
+/* Indents */
+
+// gap
 $gap-small: 10px;
 $gap-medium: 20px;
 $gap-large: 40px;
+
+// padding
+$padding-small: 20px;
+$padding-standart: 30px;
+$padding-medium: 40px;
+$padding-large: 60px;
