@@ -18,7 +18,7 @@ const Map = () => {
     <>
       <section className="map">
         <div className="map__container">
-          <h2 className="map-header">CHOOSE THE COUNTRY</h2>
+          <h2 className="map-header">{t("map.header")}</h2>
           <div className="map-items">
             <AddCountry header={t("map.Belarus")} img={Belarus} />
             <AddCountry header={t("map.Russia")} img={Russia} />
