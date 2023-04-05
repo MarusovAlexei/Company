@@ -19,5 +19,8 @@
     "UAE" : "UAE",
     "Turkey" : "Turkey",
     "Cyprus" : "Cyprus"
+  },
+  "location": {
+    "header" : "WHERE TO FIND US?"
   }
 }
