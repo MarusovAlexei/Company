@@ -1,10 +1,12 @@
 const AddCountry = (props) => {
-  return (
+  const values = props.value;
+  const country = values.map((item) => (
     <div className="map-item">
-      <div className="map-item_contry-header">{props.header}</div>
-      <img className="map-item_contry-img" src={props.img} alt={props.header} />
+      <div className="map-item_contry-header">{item[0]}</div>
+      <img className="map-item_contry-img" src={item[1]} alt={item[0]} />
     </div>
-  );
+  ));
+  return country;
 };
 
 export default AddCountry;

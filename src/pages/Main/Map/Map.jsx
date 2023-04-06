@@ -9,28 +9,31 @@ import Turkey from "./../../../assets/image/map/Turkey.png";
 import UAE from "./../../../assets/image/map/UAE.png";
 
 import AddCountry from "../../../helpers/functions/AddCountry";
+
 import { useTranslation } from "react-i18next";
 
 const Map = () => {
   const { t, i18n } = useTranslation();
 
+  const countryItems = [
+    [t("map.Belarus"), Belarus],
+    [t("map.Russia"), Russia],
+    [t("map.Georgia"), Georgia],
+    [t("map.Azerbaijan"), Azerbaijan],
+    [t("map.UAE"), UAE],
+    [t("map.Turkey"), Turkey],
+    [t("map.Cyprus"), Cyprus],
+  ];
+
   return (
-    <>
-      <section className="map">
-        <div className="map__container">
-          <h2 className="map-header">{t("map.header")}</h2>
-          <div className="map-items">
-            <AddCountry header={t("map.Belarus")} img={Belarus} />
-            <AddCountry header={t("map.Russia")} img={Russia} />
-            <AddCountry header={t("map.Georgia")} img={Georgia} />
-            <AddCountry header={t("map.Azerbaijan")} img={Azerbaijan} />
-            <AddCountry header={t("map.UAE")} img={UAE} />
-            <AddCountry header={t("map.Turkey")} img={Turkey} />
-            <AddCountry header={t("map.Cyprus")} img={Cyprus} />
-          </div>
+    <section className="map">
+      <div className="map__container">
+        <h2 className="map-header">{t("map.header")}</h2>
+        <div className="map-items">
+          <AddCountry value={countryItems} />
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

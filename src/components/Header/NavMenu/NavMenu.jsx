@@ -5,16 +5,18 @@ import AddLink from "../../../helpers/functions/AddLinks";
 const NavMenu = () => {
   const { t, i18n } = useTranslation();
 
+  const menuItems = [
+    [t("navMenu.main"), "/"],
+    [t("navMenu.map"), "/map"],
+    [t("navMenu.contact"), "/contact"],
+    [t("navMenu.about"), "/about"],
+    [t("navMenu.partners"), "/partners"],
+  ];
+
   return (
-    <>
-      <nav className="header__menu-nav">
-        <AddLink content={t("navMenu.main")} path="/" />
-        <AddLink content={t("navMenu.map")} path="/map" />
-        <AddLink content={t("navMenu.contact")} path="/contact" />
-        <AddLink content={t("navMenu.about")} path="/about" />
-        <AddLink content={t("navMenu.partners")} path="/partners" />
-      </nav>
-    </>
+    <nav className="header__menu-nav">
+      <AddLink value={menuItems} />
+    </nav>
   );
 };
 
