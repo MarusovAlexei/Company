@@ -1,7 +1,7 @@
 import "./Logo.scss";
 import logoBlackTheme from "./../../../assets/image/header/logoWhite.svg";
 import logoWhiteTheme from "./../../../assets/image/header/logoBlack.svg";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useTheme from "../../../hooks/useTheme";
 
 const Logo = () => {

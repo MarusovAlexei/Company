@@ -26,28 +26,28 @@ const DropwnMenu = () => {
     );
   };
 
+  const langItems = ["ru", "en"];
+
   return (
-    <>
-      <div className="header__language">
-        <div className="header__language-text">{t("language")}</div>
-        <div className="header__language-btn">
-          <button
-            className="language__btn-dropdown"
-            onClick={() => isVisible(!inVisible)}
-          >
-            {language}
-          </button>
-          <div
-            className={
-              inVisible ? "isVisible dropdown-content__wrapper" : "inVisible"
-            }
-          >
-            <DropdownContent content="ru" />
-            <DropdownContent content="en" />
-          </div>
+    <div className="header__language">
+      <div className="header__language-text">{t("language")}</div>
+      <div className="header__language-btn">
+        <button
+          className="language__btn-dropdown"
+          onClick={() => isVisible(!inVisible)}
+        >
+          {language}
+        </button>
+        <div
+          className={
+            inVisible ? "isVisible dropdown-content__wrapper" : "inVisible"
+          }
+        >
+          <DropdownContent content="ru" />
+          <DropdownContent content="en" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

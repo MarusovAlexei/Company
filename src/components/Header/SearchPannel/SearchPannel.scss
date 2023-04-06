@@ -1,9 +1,10 @@
-@import "./../../../helpers/styles/_variables.scss";
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
 
 .header__menu-search input {
   width: 100%;
   height: 25px;
-  padding: 0 40px;
+  padding: 0 $padding-medium;
   background: url(./../../../assets/image/header/magnifying-glass.png) no-repeat
     10px center;
   background-color: $bgc-search-pannel;

@@ -1,12 +1,11 @@
-@import "./../../../helpers/styles/_variables.scss";
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
 
 .layout {
   .header__logo {
-    display: flex;
-    flex-direction: row;
+    @include flex-row-wrap;
     align-items: flex-end;
     gap: $gap-small;
-    flex-wrap: wrap;
 
     &-name {
       color: $text-black-theme;
