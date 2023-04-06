@@ -1,8 +1,7 @@
-@import "./../../../helpers/styles/_variables.scss";
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
 
 .header__theme-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-alignment-center;
   width: 45px;
 }

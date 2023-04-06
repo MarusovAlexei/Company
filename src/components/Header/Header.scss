@@ -37,20 +37,10 @@
       }
     }
   }
-
-  .text-menu {
-    color: $text-black-theme;
-    font-size: $text-size-medium;
-  }
 }
 
 .layout.white {
   .header {
     background-color: $bgc-white-theme;
-  }
-
-  .text-menu {
-    color: $text-white-theme;
-    font-size: $text-size-medium;
   }
 }

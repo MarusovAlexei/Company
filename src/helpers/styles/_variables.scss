@@ -18,6 +18,8 @@ $bgc-search-pannel: rgb(233, 233, 233);
 $bgc-intro: rgba(177, 129, 56, 0.8);
 $bgc-error-page: rgb(255, 255, 255);
 $language-header-text: rgb(177, 129, 56);
+$text-hover: rgb(177, 129, 56);
+$text-active: rgb(255, 255, 255);
 
 /* Fonts */
 
@@ -45,3 +47,8 @@ $padding-small: 20px;
 $padding-standart: 30px;
 $padding-medium: 40px;
 $padding-large: 60px;
+
+// display
+$desktop: 1280px;
+$tablet: 780px;
+$mobile: 320px;

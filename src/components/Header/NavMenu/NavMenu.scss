@@ -1,8 +1,37 @@
 @import "./../../../helpers/styles/variables";
 @import "./../../../helpers/styles/mixins";
 
-.text-menu {
-  color: $text-black-theme;
-  font-size: $text-size-medium;
-  font-weight: 700;
+.layout {
+  .text-menu {
+    color: $text-black-theme;
+    font-size: $text-size-medium;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+  }
+
+  .header__menu-nav a:hover {
+    color: $text-hover;
+    transition: $time-transition;
+  }
+
+  .header__menu-nav a:active {
+    color: $text-active;
+    transition: calc($time-transition / 2);
+  }
+
+  .isActive {
+    border-bottom: 3px solid $language-header-text;
+  }
+}
+
+.layout.white {
+  .text-menu {
+    color: $text-white-theme;
+    font-size: $text-size-medium;
+    font-weight: 700;
+  }
+
+  .isActive {
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
 }

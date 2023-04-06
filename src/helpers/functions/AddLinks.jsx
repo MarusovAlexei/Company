@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const AddLink = (props) => {
   const values = props.value;
 
   const listItems = values.map((item) => (
-    <Link className="text-menu" to={item[1]}>
+    <NavLink
+      className={({ isActive }) =>
+        isActive ? "text-menu isActive" : "text-menu"
+      }
+      to={item[1]}
+    >
       {item[0]}
-    </Link>
+    </NavLink>
   ));
 
   return listItems;
