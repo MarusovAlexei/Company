@@ -1,0 +1,13 @@
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
+
+.layout {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-center {
+    text-align: center;
+  }
+}

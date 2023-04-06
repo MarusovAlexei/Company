@@ -51,12 +51,3 @@
   background-position: center;
   background-size: cover;
 }
-
-/* other */
-
-@mixin contry-header {
-  font-weight: 600;
-  font-size: $text-size-large;
-  line-height: 39px;
-  letter-spacing: 0.1em;
-}

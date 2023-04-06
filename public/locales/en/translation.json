@@ -23,5 +23,16 @@
   },
   "location": {
     "header" : "WHERE TO FIND US?"
+  },
+  "footer": {
+    "address": {
+      "header":"Office addresses:",
+      "Minsk":"Minsk, str. Mongolskay, 19",
+      "Mogilev":"Mogilev, str. Kotrosd, 20",
+      "Moscow":"Moscow, str. Goopets, 4"
+    },
+    "telephones": {
+      "header":"Contact telephones:"
+    }
   }
 }

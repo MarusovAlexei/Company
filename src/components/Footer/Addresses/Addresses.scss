@@ -1,0 +1,9 @@
+@import "./../../../helpers/styles/variables";
+@import "./../../../helpers/styles/mixins";
+
+.layout {
+  .footer__blocks-addresses {
+    display: flex;
+    flex-direction: column;
+  }
+}

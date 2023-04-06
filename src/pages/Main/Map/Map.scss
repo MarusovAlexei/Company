@@ -23,7 +23,7 @@
       justify-content: space-between;
       width: $desktop;
       gap: $gap-large;
-      padding: $gap-medium;
+      padding: $padding-small $padding-large;
     }
 
     &-item {
@@ -36,7 +36,10 @@
 
       &_contry-header {
         color: $text-black-theme;
-        @include contry-header;
+        font-weight: 600;
+        font-size: $text-size-medium;
+        line-height: 39px;
+        letter-spacing: 0.1em;
       }
 
       &_contry-img {
