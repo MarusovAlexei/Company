@@ -1,0 +1,39 @@
+{
+  "language": "Language",
+  "navMenu": {
+    "main": "Main", 
+    "map": "Map",
+    "contact": "Contact",
+    "about": "About",
+    "partners": "Partners"    
+  },
+  "intro": {
+    "header":"CHOOSE A PROPERTY FOR YOURSELF",
+    "btn":"Request a call"
+  },
+  "search":"enter the name of the residential complex",
+  "map": {
+    "header":"CHOOSE THE COUNTRY",
+    "Belarus" : "Belarus",
+    "Russia" : "Russia",
+    "Georgia" : "Georgia",
+    "Azerbaijan" : "Azerbaijan",
+    "UAE" : "UAE",
+    "Turkey" : "Turkey",
+    "Cyprus" : "Cyprus"
+  },
+  "location": {
+    "header" : "WHERE TO FIND US?"
+  },
+  "footer": {
+    "address": {
+      "header":"Office addresses:",
+      "Minsk":"Minsk, str. Mongolskay, 19",
+      "Mogilev":"Mogilev, str. Kotrosd, 20",
+      "Moscow":"Moscow, str. Goopets, 4"
+    },
+    "telephones": {
+      "header":"Contact telephones:"
+    }
+  }
+}
