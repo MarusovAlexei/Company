@@ -11,6 +11,7 @@
     "header":"CHOOSE A PROPERTY FOR YOURSELF",
     "btn":"Request a call"
   },
+  "search":"enter the name of the residential complex",
   "map": {
     "header":"CHOOSE THE COUNTRY",
     "Belarus" : "Belarus",

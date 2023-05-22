@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const AddCountry = (props) => {
   const values = props.value;
   const country = values.map((item) => (
-    <div className="map-item">
+    <Link className="map-item" to={item[2]}>
       <div className="map-item_contry-header">{item[0]}</div>
       <img className="map-item_contry-img" src={item[1]} alt={item[0]} />
-    </div>
+    </Link>
   ));
   return country;
 };

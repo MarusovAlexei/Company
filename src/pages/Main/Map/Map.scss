@@ -45,6 +45,11 @@
       &_contry-img {
         min-height: 150px;
       }
+
+      &_contry-img:hover {
+        transform: scale(1.05);
+        transition: $time-transition;
+      }
     }
   }
 }

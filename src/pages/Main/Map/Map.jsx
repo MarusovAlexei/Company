@@ -16,13 +16,13 @@ const Map = () => {
   const { t, i18n } = useTranslation();
 
   const countryItems = [
-    [t("map.Belarus"), Belarus],
-    [t("map.Russia"), Russia],
-    [t("map.Georgia"), Georgia],
-    [t("map.Azerbaijan"), Azerbaijan],
-    [t("map.UAE"), UAE],
-    [t("map.Turkey"), Turkey],
-    [t("map.Cyprus"), Cyprus],
+    [t("map.Belarus"), Belarus, "Belarus"],
+    [t("map.Russia"), Russia, "Russia"],
+    [t("map.Georgia"), Georgia, "Georgia"],
+    [t("map.Azerbaijan"), Azerbaijan, "Azerbaijan"],
+    [t("map.UAE"), UAE, "UAE"],
+    [t("map.Turkey"), Turkey, "Turkey"],
+    [t("map.Cyprus"), Cyprus, "Cyprus"],
   ];
 
   return (

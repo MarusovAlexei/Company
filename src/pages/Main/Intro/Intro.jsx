@@ -1,9 +1,11 @@
 import "./Intro.scss";
+import PopUp from "../../../components/PopUp/PopUp";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const Intro = () => {
   const { t, i18n } = useTranslation();
-
+  const [popupActive, setPopupActive] = useState(false);
   return (
     <section className="intro">
       <div className="intro__container">
@@ -12,13 +14,14 @@ const Intro = () => {
           <button
             className="intro-btn"
             onClick={() => {
-              alert("Здесь будет форма обратной связи");
+              setPopupActive(!popupActive);
             }}
           >
             {t("intro.btn")}
           </button>
         </div>
       </div>
+      <PopUp active={popupActive} setActive={setPopupActive} />
     </section>
   );
 };

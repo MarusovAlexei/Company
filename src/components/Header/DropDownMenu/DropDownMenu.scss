@@ -29,6 +29,7 @@
     font-size: $text-size-small;
     width: 120px;
     padding: 3px 0;
+    cursor: pointer;
   }
 
   .language__btn-dropdown:hover {
@@ -43,6 +44,7 @@
     padding: 5px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
   }
 
   .dropdown-content:hover {
