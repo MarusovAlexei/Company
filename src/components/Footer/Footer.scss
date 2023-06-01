@@ -13,6 +13,7 @@
       flex-direction: column;
       padding: $padding-small $padding-large;
       gap: $gap-large;
+      border-top: 2px solid $bgc-section-header;
     }
 
     &__blocks {

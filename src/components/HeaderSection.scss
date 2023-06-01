@@ -1,0 +1,14 @@
+@import "./../helpers/styles/mixins";
+@import "./../helpers/styles/variables";
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bgc-section-header;
+  color: $text-black-theme;
+  letter-spacing: 0.1em;
+  max-width: 1280px;
+  width: 100vw;
+  height: 60px;
+}

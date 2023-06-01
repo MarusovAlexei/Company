@@ -45,6 +45,11 @@
       letter-spacing: 0.1em;
       cursor: pointer;
     }
+
+    &-btn:hover {
+      opacity: 0.8;
+      transition: 0.5s;
+    }
   }
 }
 
