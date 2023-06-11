@@ -11,7 +11,7 @@ const Geolocations = () => {
         <iframe
           className="location-map"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac1eb8a37ae091b5d1351555e7a481eda5743b403485a2b41e72b4f8bbd305eda&amp;source=constructor"
-          width="1280"
+          width="100%"
           height="300"
           frameborder="0"
         ></iframe>

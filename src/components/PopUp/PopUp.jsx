@@ -38,14 +38,14 @@ const PopUp = ({ active, setActive }) => {
             rows={5}
           />
         </form>
-        <div className="popup__privacy">
+        {/*  <div className="popup__privacy">
           I agree with the
           <a href="https://osobnyaki.com/privacy" target="_blank">
             {" "}
             privacy policy
           </a>
           <input type="checkbox" />
-        </div>
+        </div> */}
         <div className="popup__content-btns">
           <button
             className="popup__btn-send"

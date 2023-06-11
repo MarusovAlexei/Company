@@ -33,14 +33,12 @@
   background-color: $bgc-section-header;
   color: $text-black-theme;
   letter-spacing: 0.1em;
-  max-width: 1280px;
-  width: 100vw;
+  width: 100%;
   height: 60px;
 }
 
 @mixin section-width {
   width: 100%;
-  max-width: 1280px;
 }
 
 /* images */

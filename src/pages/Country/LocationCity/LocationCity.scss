@@ -1,0 +1,143 @@
+@import "./../../../helpers/styles/mixins";
+@import "./../../../helpers/styles/variables";
+
+.country-position {
+  position: absolute;
+  width: 170px;
+  height: 100px;
+}
+
+.city-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  position: relative;
+  cursor: pointer;
+}
+
+.city-point:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 0 5px rgb(255, 222, 113);
+}
+
+.city-text {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.city-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.russia {
+  .moscow {
+    position: absolute;
+    left: -370px;
+  }
+
+  .krasnodar {
+    position: absolute;
+    left: -461px;
+    top: 175px;
+  }
+
+  .spb {
+    position: absolute;
+    left: -353px;
+    top: -72px;
+  }
+
+  .sochi {
+    position: absolute;
+    left: -501px;
+    top: 150px;
+  }
+
+  .anapa {
+    position: absolute;
+    left: -517px;
+    top: 120px;
+  }
+}
+
+.belarus {
+  .minsk {
+    position: absolute;
+    left: 50px;
+    top: 45px;
+  }
+}
+
+.georgia {
+  .tbilisi {
+    position: absolute;
+    left: 293px;
+    top: 204px;
+  }
+
+  .batumi {
+    position: absolute;
+    left: -188px;
+    top: 225px;
+  }
+}
+
+.uae {
+  .dubai {
+    position: absolute;
+    left: 312px;
+    top: -138px;
+  }
+
+  .ras-al-khaimah {
+    position: absolute;
+    right: -365px;
+    top: -204px;
+  }
+}
+
+.turkey {
+  .stambul {
+    position: absolute;
+    left: -400px;
+    top: -55px;
+  }
+
+  .mersin {
+    position: absolute;
+    left: 41px;
+    top: 279px;
+  }
+
+  .antalya {
+    position: absolute;
+    left: -227px;
+    top: 302px;
+  }
+
+  .alanya {
+    position: absolute;
+    left: -114px;
+    top: 327px;
+  }
+}
+
+.azerbaijan {
+  .baki {
+    position: absolute;
+    right: -276px;
+    top: 7px;
+  }
+}
+
+.cyprus {
+  .baki {
+    position: absolute;
+    right: -276px;
+    top: 7px;
+  }
+}

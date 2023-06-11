@@ -5,7 +5,6 @@
   .map {
     min-height: 780px;
     background-color: $bgc-black-theme;
-    padding: 0 $padding-small $padding-small;
 
     &__container {
       @include flex-alignment-up;
@@ -20,8 +19,8 @@
     &-items {
       @include flex-row-wrap;
       align-items: start;
-      justify-content: space-between;
-      width: $desktop;
+      justify-content: center;
+      width: 100%;
       gap: $gap-large;
       padding: $padding-small $padding-large;
     }

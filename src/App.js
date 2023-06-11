@@ -9,18 +9,9 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Main from "./pages/Main/Main";
 import About from "./pages/About/About.jsx";
 import Country from "./pages/Country/Country";
+import City from "./pages/City/City";
 
 function App() {
-  /*  const countyes = [
-    "/Belarus",
-    "/Russia",
-    "/Georgia",
-    "/Azerbaijan",
-    "/UAE",
-    "/Turkey",
-    "/Cyprus",
-  ]; */
-
   return (
     <>
       <ThemeProvider>
@@ -37,6 +28,7 @@ function App() {
               <Route path="/UAE" element={<Country />} />
               <Route path="/Turkey" element={<Country />} />
               <Route path="/Cyprus" element={<Country />} />
+              <Route path="/City" element={<City />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </main>

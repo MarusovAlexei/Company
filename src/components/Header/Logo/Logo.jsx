@@ -13,7 +13,6 @@ const Logo = () => {
         <div className="header__logo-img">
           <img src={isDark ? logoBlackTheme : logoWhiteTheme} alt="logo" />
         </div>
-        <div className="header__logo-name">name compony</div>
       </div>
     </Link>
   );

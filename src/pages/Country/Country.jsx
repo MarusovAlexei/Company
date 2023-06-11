@@ -8,6 +8,9 @@ import Georgia from "./../../assets/image/map/Georgia.png";
 import Turkey from "./../../assets/image/map/Turkey.png";
 import UAE from "./../../assets/image/map/UAE.png";
 
+import RussiaLocation from "./LocationCity/Russia";
+import ChangeLocation from "./LocationCity/ChangeLocation";
+
 const Country = () => {
   const country = useLocation().pathname.substring(1);
   const countyes = [
@@ -30,10 +33,16 @@ const Country = () => {
     <div className="country">
       <div className="country__container">
         <h2 className="country__header">{country}</h2>
+        <ChangeLocation userChange={country} />
         <img src={targetCountry.join("")} alt="country" />
-        <Link className="country__btn" to={"/"}>
-          back to map
-        </Link>
+        <div className="country__btns">
+          <Link className="country__btn" to={"/"}>
+            back to map
+          </Link>
+          <Link className="country__btn" to={`/${country}/City`}>
+            to city
+          </Link>
+        </div>
       </div>
     </div>
   );
