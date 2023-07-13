@@ -3,8 +3,8 @@ import AddCityOnMap from "../../../helpers/functions/AddCityOnMap";
 
 const GeorgiaLocation = () => {
   const georgiaCities = [
-    ["tbilisi", "Tbilisi", "/"],
-    ["batumi", "Batumi", "/"],
+    ["tbilisi", "Tbilisi", "Tbilisi"],
+    ["batumi", "Batumi", "Batumi"],
   ];
 
   return (

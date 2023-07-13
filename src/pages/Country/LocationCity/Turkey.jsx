@@ -3,10 +3,10 @@ import AddCityOnMap from "../../../helpers/functions/AddCityOnMap";
 
 const TurkeyLocation = () => {
   const turkeyCities = [
-    ["stambul", "Stambul", "/"],
-    ["mersin", "Mersin", "/"],
-    ["antalya", "Antalya", "/"],
-    ["alanya", "Alanya", "/"],
+    ["stambul", "Stambul", "Stambul"],
+    ["mersin", "Mersin", "Mersin"],
+    ["antalya", "Antalya", "Antalya"],
+    ["alanya", "Alanya", "Alanya"],
   ];
 
   return (

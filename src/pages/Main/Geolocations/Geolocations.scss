@@ -4,6 +4,7 @@
 .layout {
   .location {
     background-color: $bgc-black-theme;
+    width: 100%;
 
     &__container {
       @include flex-alignment-up;

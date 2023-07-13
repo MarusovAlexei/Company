@@ -1,7 +1,7 @@
 @import "./../../helpers/styles/variables";
 @import "./../../helpers/styles/mixins";
 
-.city {
+.company {
   background-color: black;
 
   &__container {
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 0;
+    padding: 20px 0;
     gap: 40px;
   }
 
@@ -18,75 +18,49 @@
     @include section-header;
   }
 
-  &__content {
-    width: 1280px;
+  &__items {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-    &-slider-intro {
-      width: 100%;
-      height: 500px;
-    }
-
-    &-block {
-      width: 100%;
-      height: 500px;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    &-block-rev {
-      width: 100%;
-      height: 500px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-
-    &-slider-layout {
-      width: 100%;
-      height: 500px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
-  &__block-img {
-    height: 100%;
-    width: 48%;
-    background-image: url(./../../assets/company/russia/soci/kislorod/block/description.jpg);
+  &__item {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
-  &__block-descrition {
+  &__item-header {
+    z-index: 1;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+  }
+
+  &__item-overley {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
     height: 100%;
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  }
 
-    h3,
-    div {
-      font-weight: 800;
-      line-height: 34px;
-      letter-spacing: 0.1em;
-      text-align: left;
-      color: #fff;
-    }
+  &__item:hover &__item-header {
+    transition: 0.25s;
+    font-size: 28px;
+  }
 
-    h3 {
-      font-size: 24px;
-      width: 100%;
-      text-align: center;
-      background-color: $bgc-section-header;
-    }
-
-    div {
-      font-size: 18px;
-      text-align: justify;
-    }
+  &__item:hover &__item-overley {
+    transition: 0.25s;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   &__btns {

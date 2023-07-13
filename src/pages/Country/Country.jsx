@@ -1,5 +1,7 @@
 import "./Country.scss";
 import { Link, useLocation } from "react-router-dom";
+
+// List of countries img
 import Belarus from "./../../assets/image/map/Belarus.png";
 import Russia from "./../../assets/image/map/Russia.png";
 import Azerbaijan from "./../../assets/image/map/Azerbaijan.png";
@@ -8,11 +10,12 @@ import Georgia from "./../../assets/image/map/Georgia.png";
 import Turkey from "./../../assets/image/map/Turkey.png";
 import UAE from "./../../assets/image/map/UAE.png";
 
-import RussiaLocation from "./LocationCity/Russia";
 import ChangeLocation from "./LocationCity/ChangeLocation";
 
 const Country = () => {
   const country = useLocation().pathname.substring(1);
+
+  // List of countries
   const countyes = [
     { img: Belarus, country: "Belarus" },
     { img: Russia, country: "Russia" },
@@ -23,6 +26,11 @@ const Country = () => {
     { img: UAE, country: "UAE" },
   ];
 
+  // The name of the country from state Link
+  const location = useLocation();
+  const { name } = location.state;
+
+  // Country image selection depending on http
   const targetCountry = countyes.map((elem) => {
     if (elem.country === country) {
       return elem.img;
@@ -32,15 +40,12 @@ const Country = () => {
   return (
     <div className="country">
       <div className="country__container">
-        <h2 className="country__header">{country}</h2>
+        <h2 className="country__header">{name}</h2>
         <ChangeLocation userChange={country} />
         <img src={targetCountry.join("")} alt="country" />
         <div className="country__btns">
-          <Link className="country__btn" to={"/"}>
+          <Link className="country__btn" to={"/#map"}>
             back to map
-          </Link>
-          <Link className="country__btn" to={`/${country}/City`}>
-            to city
           </Link>
         </div>
       </div>

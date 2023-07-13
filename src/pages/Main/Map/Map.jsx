@@ -26,7 +26,7 @@ const Map = () => {
   ];
 
   return (
-    <section className="map">
+    <section className="map" id="map">
       <div className="map__container">
         <h2 className="map-header">{t("map.header")}</h2>
         <div className="map-items">

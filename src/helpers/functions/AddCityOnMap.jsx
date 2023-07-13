@@ -6,10 +6,15 @@ const AddCityOnMap = (props) => {
 
   const cities = values.map((item) => (
     <div className={item[0] + " " + itemClass}>
-      <Link className="city-point" to={item[2]}></Link>
+      <Link
+        className="city-point"
+        to={item[2]}
+        state={{ name: item[1] }}
+      ></Link>
       <div className="city-text">{item[1]}</div>
     </div>
   ));
+
   return cities;
 };
 

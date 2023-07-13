@@ -10,6 +10,7 @@ import Main from "./pages/Main/Main";
 import About from "./pages/About/About.jsx";
 import Country from "./pages/Country/Country";
 import City from "./pages/City/City";
+import Company from "./pages/Company/Company";
 
 function App() {
   return (
@@ -21,14 +22,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/about" element={<About />} />
-              <Route path="/Belarus" element={<Country />} />
-              <Route path="/Russia" element={<Country />} />
-              <Route path="/Georgia" element={<Country />} />
-              <Route path="/Azerbaijan" element={<Country />} />
-              <Route path="/UAE" element={<Country />} />
-              <Route path="/Turkey" element={<Country />} />
-              <Route path="/Cyprus" element={<Country />} />
-              <Route path="/City" element={<City />} />
+
+              <Route path="/:country?" element={<Country />} />
+              <Route path="/:country?/:city?/" element={<City />} />
+              <Route path="/:country?/:city/:location?" element={<Company />} />
+
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </main>

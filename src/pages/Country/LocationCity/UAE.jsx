@@ -3,8 +3,8 @@ import AddCityOnMap from "../../../helpers/functions/AddCityOnMap";
 
 const UAELocation = () => {
   const UaeCities = [
-    ["dubai", "Dubai", "/"],
-    ["ras-al-khaimah", "Ras Al Khaimah", "/"],
+    ["dubai", "Dubai", "Dubai"],
+    ["ras-al-khaimah", "Ras Al Khaimah", "RasAlKhaimah"],
   ];
 
   return (

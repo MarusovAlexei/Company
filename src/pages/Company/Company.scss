@@ -1,0 +1,109 @@
+@import "./../../helpers/styles/variables";
+@import "./../../helpers/styles/mixins";
+
+.city {
+  background-color: black;
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 40px;
+  }
+
+  &__header {
+    @include section-header;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-slider-intro {
+      width: 100%;
+      height: 700px;
+      background-color: gray;
+    }
+
+    &-block {
+      width: 100%;
+      height: 500px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    &-block-rev {
+      width: 100%;
+      height: 500px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__block-img {
+    height: 100%;
+    width: 48%;
+    background-image: url(./../../assets/company/russia/soci/kislorod/block/description.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__block-descrition {
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    h3,
+    div {
+      font-weight: 800;
+      line-height: 34px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      background-color: $bgc-section-header;
+    }
+
+    div {
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__btn {
+    background-color: rgb(177, 129, 56);
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 4px;
+  }
+}

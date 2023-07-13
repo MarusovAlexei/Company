@@ -3,11 +3,11 @@ import AddCityOnMap from "../../../helpers/functions/AddCityOnMap";
 
 const RussiaLocation = () => {
   const russiaCities = [
-    ["moscow", "Moscow", "/"],
-    ["krasnodar", "Krasnodar", "/"],
-    ["spb", "Saint Petersburg", "/"],
-    ["sochi", "Sochi", "/"],
-    ["anapa", "Anapa", "/"],
+    ["moscow", "Moscow", "Moscow"],
+    ["krasnodar", "Krasnodar", "Krasnodar"],
+    ["spb", "Saint Petersburg", "SaintPetersburg"],
+    ["sochi", "Sochi", "Sochi"],
+    ["anapa", "Anapa", "Anapa"],
   ];
 
   return (
