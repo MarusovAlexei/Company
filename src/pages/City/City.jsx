@@ -1,7 +1,7 @@
 import "./City.scss";
 
 import { Link, useLocation } from "react-router-dom";
-import ChangeСityСompanies from "../../base/city/BaseCity";
+import ChangeСityСompanies from "../../base/BaseCity";
 
 const Company = () => {
   const city = useLocation().pathname.split("/").pop();
