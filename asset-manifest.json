@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Company/static/css/main.a96327c5.css",
-    "main.js": "/Company/static/js/main.520fb602.js",
+    "main.js": "/Company/static/js/main.1bd9b227.js",
     "static/media/MaldivesHomes.jpg": "/Company/static/media/MaldivesHomes.3028779ee210a7d47d20.jpg",
     "static/media/Silver.jpg": "/Company/static/media/Silver.bc81350dbc1f0a8c504a.jpg",
     "static/media/JasminePark.jpg": "/Company/static/media/JasminePark.3af034ce11b99aece348.jpg",
@@ -97,10 +97,10 @@
     "index.html": "/Company/index.html",
     "static/media/getFetch.cjs": "/Company/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.a96327c5.css.map": "/Company/static/css/main.a96327c5.css.map",
-    "main.520fb602.js.map": "/Company/static/js/main.520fb602.js.map"
+    "main.1bd9b227.js.map": "/Company/static/js/main.1bd9b227.js.map"
   },
   "entrypoints": [
     "static/css/main.a96327c5.css",
-    "static/js/main.520fb602.js"
+    "static/js/main.1bd9b227.js"
   ]
 }
